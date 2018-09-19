@@ -1,0 +1,34 @@
+post: 
+  tags:
+    - pet
+  summary: Add a new pet to the store  
+  description: Add a new pet to the store 
+  operationId: addPet
+  responses:
+    '405':
+      description: Invalid input 
+  security:
+    - petstore_auth:
+        - 'write:pets'
+        - 'read:pets'
+  requestBody:
+    $ref: '#/components/requestBodies/Pet'
+put:
+  tags:
+    - pet
+  summary: Update an existing pet
+  description: ''
+  operationId: updatePet
+  responses:
+    '400':
+      description: Invalid ID supplied
+    '404':
+      description: Pet not found
+    '405':
+      description: Validation exception
+  security:
+    - petstore_auth:
+        - 'write:pets'
+        - 'read:pets'
+  requestBody:
+    $ref: '#/components/requestBodies/Pet'

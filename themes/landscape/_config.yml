@@ -1,0 +1,34 @@
+# Header
+menu:
+  Home: /
+  PetStore: /swagger/PetStore
+rss: /atom.xml
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Sidebar
+sidebar: right
+widgets:
+- swagger_paths
+- swagger_schemas
+- category
+- tagcloud
+- archive
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+
+# widget behavior
+archive_type: 'monthly'
+show_count: false
+
+# Miscellaneous
+google_analytics:
+gauges_analytics:
+favicon: /favicon.png
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
