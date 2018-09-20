@@ -78,7 +78,9 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:takumiao/hexo-swagger-site.git
+  branch: gh-pages
 
 ## Markdown-it
 markdown:
