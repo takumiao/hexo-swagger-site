@@ -2,6 +2,7 @@
 menu:
   Home: /
   PetStore: /swagger/PetStore
+  WeiboAPI: /swagger/WeiboAPI
 rss: /atom.xml
 
 # Content

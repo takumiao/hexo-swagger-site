@@ -1,0 +1,103 @@
+type: object
+properties:
+  id:
+    type: integer
+    format: int64
+    description: 用户UID
+  idstr:
+    type: string
+    description: 字符串型的用户UID
+  screen_name:
+    type: string
+    description: 用户昵称
+  name:
+    type: string
+    description: 友好显示名称
+  province:
+    type: string
+    description: 用户所在省级ID
+  city:
+    type: string
+    description: 用户所在城市ID
+  location:
+    type: string
+    description: 用户所在地
+  description:
+    type: string
+    description: 用户个人描述
+  url:
+    type: string
+    format: url
+    description: 用户博客地址
+  profile_image_url:
+    type: string
+    format: int32
+    description: 用户头像地址（中图），50x50像素
+  profile_url:
+    type: string
+    description: 用户的微博统一URL地址
+  domain:
+    type: string
+    description: 用户个性化域名
+  weihao:
+    type: string
+    description: 用户微号
+  gender:
+    type: string
+    description: 性别，m：男、f：女、n：未知
+  followers_count:
+    type: integer
+    description: 粉丝数
+  friends_count:
+    type: integer
+    description: 关注数
+  statuses_count:
+    type: integer
+    description: 微博数
+  favourites_count:
+    type: integer
+    description: 收藏数
+  created_at:
+    type: integer
+    description: 用户创建（注册）时间
+  following:
+    type: boolean
+    description: 暂未支持
+  allow_all_act_msg:
+    type: boolean
+    description: 是否允许所有人给我发私信，true：是，false：否
+  geo_enabled:
+    type: boolean
+    description: 是否允许标识用户的地理位置，true：是，false：否
+  verified:
+    type: boolean
+    description: 是否是微博认证用户，即加V用户，true：是，false：否
+  verified_type:
+    type: integer
+    description: 暂未支持
+  remark:
+    type: string
+    description: 用户备注信息，只有在查询用户关系时才返回此字段
+  status:
+    type: object
+  allow_all_comment:
+    type: boolean
+    description: 是否允许所有人对我的微博进行评论，true：是，false：否
+  avatar_large:
+    type: string
+    description: 用户头像地址（大图），180×180像素
+  avatar_hd:
+    type: string
+    description: 用户头像地址（高清），高清头像原图
+  verified_reason:
+    type: string
+    description: 认证原因
+  online_status:
+    type: integer
+    description: 用户的在线状态，0：不在线、1：在线
+  bi_followers_count:
+    type: integer
+    description: 用户的互粉数
+  lang:
+    type: string
+    description: 用户当前的语言版本，zh-cn：简体中文，zh-tw：繁体中文，en：英语
