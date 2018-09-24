@@ -1,4 +1,5 @@
 type: object
+description: 地理信息
 properties:
   longitude:
     type: string
