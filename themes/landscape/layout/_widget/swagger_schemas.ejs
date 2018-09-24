@@ -2,7 +2,7 @@
 	var swagger_components = swagger_list_components('schemas');
 	if (swagger_components.data.length){ %>
 	<div class="widget-wrap">
-	  <h3 class="widget-title"><%= __('paths') %></h3>
+	  <h3 class="widget-title"><%= __('schemas') %></h3>
 	  <div class="widget">
 	    <%- swagger_components.html %>
 	  </div>
