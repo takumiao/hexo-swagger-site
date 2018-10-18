@@ -1,0 +1,9 @@
+type: object
+description: 通用返回
+properties:
+  previous_cursor:
+    type: integer
+  next_cursor:
+    type: number
+  total_number: 
+    type: integer

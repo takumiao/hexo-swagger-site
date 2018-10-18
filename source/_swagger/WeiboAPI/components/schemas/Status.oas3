@@ -98,3 +98,5 @@ properties:
           format: url
         remark:
           type: string
+example: 
+  $ref: '#/components/examples/status.json'
