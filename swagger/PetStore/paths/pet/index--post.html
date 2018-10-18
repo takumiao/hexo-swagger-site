@@ -7,17 +7,17 @@
   
   <title>Hexo Swagger</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Category       (            object                )      id       (            integer     {$int64}            )     name       (            string                )">
+  <meta name="description" content="[Post] /pet   - Add a new pet to the store Add a new pet to the store  RequestBody Pet object that needs to be added to the store application/json       (            Pet                )      id">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo Swagger">
-<meta property="og:url" content="https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/schemas/Category.html">
+<meta property="og:url" content="https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/pet/index--post.html">
 <meta property="og:site_name" content="Hexo Swagger">
-<meta property="og:description" content="Category       (            object                )      id       (            integer     {$int64}            )     name       (            string                )">
+<meta property="og:description" content="[Post] /pet   - Add a new pet to the store Add a new pet to the store  RequestBody Pet object that needs to be added to the store application/json       (            Pet                )      id">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-18T08:12:20.637Z">
+<meta property="og:updated_time" content="2018-10-18T08:12:20.614Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Swagger">
-<meta name="twitter:description" content="Category       (            object                )      id       (            integer     {$int64}            )     name       (            string                )">
+<meta name="twitter:description" content="[Post] /pet   - Add a new pet to the store Add a new pet to the store  RequestBody Pet object that needs to be added to the store application/json       (            Pet                )      id">
   
     <link rel="alternate" href="/hexo-swagger-site/atom.xml" title="Hexo Swagger" type="application/atom+xml">
   
@@ -61,8 +61,8 @@
       <div class="outer">
         <section id="main"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Category.html" class="article-date">
-  <time datetime="2018-10-18T08:12:20.637Z" itemprop="datePublished">2018-10-18</time>
+    <a href="/hexo-swagger-site/swagger/PetStore/paths/pet/index--post.html" class="article-date">
+  <time datetime="2018-10-18T08:12:20.614Z" itemprop="datePublished">2018-10-18</time>
 </a>
     
   </div>
@@ -71,16 +71,85 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1><code class="schema-name">Category</code>       <span class="schema-type"><em>(            object                )</em>    </span></h1>
+        <h1>[Post] /pet  <small style="font-weight:normal;"> - Add a new pet to the store</small></h1>
+<p>Add a new pet to the store</p>
+<br>
+<h2>RequestBody</h2>
+<p>Pet object that needs to be added to the store</p>
+<h4><code class="schema-name">application/json</code>       <span class="schema-type"><em>(            <a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Pet.html">Pet</a>                )</em>    </span></h4>
+<ul>
+<li><code class="schema-name">id</code>       <span class="schema-type"><em>(            integer     {$int64}            )</em>    </span></li>
+<li><code class="schema-name">category</code>       <span class="schema-type"><em>(            <a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Category.html">Category</a>                )</em>    </span>
 <ul>
 <li><code class="schema-name">id</code>       <span class="schema-type"><em>(            integer     {$int64}            )</em>    </span></li>
 <li><code class="schema-name">name</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
 </ul>
+</li>
+<li><code class="schema-name">name</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+<li><code class="schema-name">photoUrls</code>       <span class="schema-type"><em>(            array                )</em>    </span>
+<ul>
+<li><code class="schema-name">items</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+</ul>
+</li>
+<li><code class="schema-name">tags</code>       <span class="schema-type"><em>(            array                )</em>    </span>
+<ul>
+<li><code class="schema-name">items</code>       <span class="schema-type"><em>(            <a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Tag.html">Tag</a>                )</em>    </span>
+<ul>
+<li><code class="schema-name">id</code>       <span class="schema-type"><em>(            integer     {$int64}            )</em>    </span></li>
+<li><code class="schema-name">name</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code class="schema-name">status</code>       <span class="schema-type"><em>(     enum  : string                     )</em>    </span> <small class="schema-desc"> - pet status in the store</small>
+<ul>
+<li>available</li>
+<li>pending</li>
+<li>sold</li>
+</ul>
+</li>
+</ul>
+<h4><code class="schema-name">application/xml</code>       <span class="schema-type"><em>(            <a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Pet.html">Pet</a>                )</em>    </span></h4>
+<ul>
+<li><code class="schema-name">id</code>       <span class="schema-type"><em>(            integer     {$int64}            )</em>    </span></li>
+<li><code class="schema-name">category</code>       <span class="schema-type"><em>(            <a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Category.html">Category</a>                )</em>    </span>
+<ul>
+<li><code class="schema-name">id</code>       <span class="schema-type"><em>(            integer     {$int64}            )</em>    </span></li>
+<li><code class="schema-name">name</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+</ul>
+</li>
+<li><code class="schema-name">name</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+<li><code class="schema-name">photoUrls</code>       <span class="schema-type"><em>(            array                )</em>    </span>
+<ul>
+<li><code class="schema-name">items</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+</ul>
+</li>
+<li><code class="schema-name">tags</code>       <span class="schema-type"><em>(            array                )</em>    </span>
+<ul>
+<li><code class="schema-name">items</code>       <span class="schema-type"><em>(            <a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Tag.html">Tag</a>                )</em>    </span>
+<ul>
+<li><code class="schema-name">id</code>       <span class="schema-type"><em>(            integer     {$int64}            )</em>    </span></li>
+<li><code class="schema-name">name</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code class="schema-name">status</code>       <span class="schema-type"><em>(     enum  : string                     )</em>    </span> <small class="schema-desc"> - pet status in the store</small>
+<ul>
+<li>available</li>
+<li>pending</li>
+<li>sold</li>
+</ul>
+</li>
+</ul>
+<br>
+<h2>Response</h2>
+<h3>405 <small style="font-weight:normal;"> - Invalid input</small></h3>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/schemas/Category.html" data-id="cjneadpsf0007x4uhl0hx0paz" class="article-share-link">Share</a>
+      <a data-url="https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/pet/index--post.html" data-id="cjneayj8x0000esuhm7z2efv9" class="article-share-link">Share</a>
       
       
     </footer>

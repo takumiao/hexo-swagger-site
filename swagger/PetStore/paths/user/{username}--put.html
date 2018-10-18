@@ -7,17 +7,17 @@
   
   <title>Hexo Swagger</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Category       (            object                )      id       (            integer     {$int64}            )     name       (            string                )">
+  <meta name="description" content="[Put] /user/{username}   - Updated user This can only be done by the logged in user.  Parameters username       (            string                )      - name that need to be updated  RequestBody Up">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo Swagger">
-<meta property="og:url" content="https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/schemas/Category.html">
+<meta property="og:url" content="https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/user/{username}--put.html">
 <meta property="og:site_name" content="Hexo Swagger">
-<meta property="og:description" content="Category       (            object                )      id       (            integer     {$int64}            )     name       (            string                )">
+<meta property="og:description" content="[Put] /user/{username}   - Updated user This can only be done by the logged in user.  Parameters username       (            string                )      - name that need to be updated  RequestBody Up">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-18T08:12:20.637Z">
+<meta property="og:updated_time" content="2018-10-18T08:12:20.616Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Swagger">
-<meta name="twitter:description" content="Category       (            object                )      id       (            integer     {$int64}            )     name       (            string                )">
+<meta name="twitter:description" content="[Put] /user/{username}   - Updated user This can only be done by the logged in user.  Parameters username       (            string                )      - name that need to be updated  RequestBody Up">
   
     <link rel="alternate" href="/hexo-swagger-site/atom.xml" title="Hexo Swagger" type="application/atom+xml">
   
@@ -61,8 +61,8 @@
       <div class="outer">
         <section id="main"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Category.html" class="article-date">
-  <time datetime="2018-10-18T08:12:20.637Z" itemprop="datePublished">2018-10-18</time>
+    <a href="/hexo-swagger-site/swagger/PetStore/paths/user/{username}--put.html" class="article-date">
+  <time datetime="2018-10-18T08:12:20.616Z" itemprop="datePublished">2018-10-18</time>
 </a>
     
   </div>
@@ -71,16 +71,34 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1><code class="schema-name">Category</code>       <span class="schema-type"><em>(            object                )</em>    </span></h1>
+        <h1>[Put] /user/{username}  <small style="font-weight:normal;"> - Updated user</small></h1>
+<p>This can only be done by the logged in user.</p>
+<br>
+<h2>Parameters</h2>
+<h3><code class="schema-name">username</code>       <span class="schema-type"><em>(            string                )</em>    </span> <small class="schema-desc"> - name that need to be updated</small></h3>
+<br>
+<h2>RequestBody</h2>
+<p>Updated user object</p>
+<h4><code class="schema-name">application/json</code>       <span class="schema-type"><em>(            <a href="/hexo-swagger-site/swagger/PetStore/components/schemas/User.html">User</a>                )</em>    </span></h4>
 <ul>
 <li><code class="schema-name">id</code>       <span class="schema-type"><em>(            integer     {$int64}            )</em>    </span></li>
-<li><code class="schema-name">name</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+<li><code class="schema-name">username</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+<li><code class="schema-name">firstName</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+<li><code class="schema-name">lastName</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+<li><code class="schema-name">email</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+<li><code class="schema-name">password</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+<li><code class="schema-name">phone</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+<li><code class="schema-name">userStatus</code>       <span class="schema-type"><em>(            integer     {$int32}            )</em>    </span> <small class="schema-desc"> - User Status</small></li>
 </ul>
+<br>
+<h2>Response</h2>
+<h3>400 <small style="font-weight:normal;"> - Invalid user supplied</small></h3>
+<h3>404 <small style="font-weight:normal;"> - User not found</small></h3>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/schemas/Category.html" data-id="cjneadpsf0007x4uhl0hx0paz" class="article-share-link">Share</a>
+      <a data-url="https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/user/{username}--put.html" data-id="cjneayjg60007esuhxfzv08f6" class="article-share-link">Share</a>
       
       
     </footer>

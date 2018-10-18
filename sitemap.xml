@@ -2,177 +2,219 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/pet/index.html</loc>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/store/order/%7BorderId%7D.html</loc>
     
-    <lastmod>2018-09-20T16:40:46.573Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/pet/%7BpetId%7D/uploadImage.html</loc>
-    
-    <lastmod>2018-09-20T16:40:46.573Z</lastmod>
+    <lastmod>2018-10-18T08:12:20.654Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/pet/%7BpetId%7D/index.html</loc>
     
-    <lastmod>2018-09-20T16:40:46.573Z</lastmod>
+    <lastmod>2018-10-18T08:12:20.654Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/store/order/%7BorderId%7D.html</loc>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/store/order/%7BorderId%7D--delete.html</loc>
     
-    <lastmod>2018-09-20T16:40:46.573Z</lastmod>
+    <lastmod>2018-10-18T08:12:20.647Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/store/order/index--post.html</loc>
+    
+    <lastmod>2018-10-18T08:12:20.647Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/pet/%7BpetId%7D/uploadImage--post.html</loc>
+    
+    <lastmod>2018-10-18T08:12:20.646Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/pet/%7BpetId%7D/index--post.html</loc>
+    
+    <lastmod>2018-10-18T08:12:20.646Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/pet/%7BpetId%7D/index--delete.html</loc>
+    
+    <lastmod>2018-10-18T08:12:20.644Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/user/%7Busername%7D.html</loc>
     
-    <lastmod>2018-09-20T16:40:46.573Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/store/order/index.html</loc>
-    
-    <lastmod>2018-09-20T16:40:46.573Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/schemas/Order.html</loc>
-    
-    <lastmod>2018-09-20T16:40:46.573Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/schemas/Tag.html</loc>
-    
-    <lastmod>2018-09-20T16:40:46.573Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/schemas/Pet.html</loc>
-    
-    <lastmod>2018-09-20T16:40:46.573Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/schemas/ApiResponse.html</loc>
-    
-    <lastmod>2018-09-20T16:40:46.573Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/pet/findByStatus.html</loc>
-    
-    <lastmod>2018-09-20T16:40:46.573Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/pet/findByTags.html</loc>
-    
-    <lastmod>2018-09-20T16:40:46.573Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/user/logout.html</loc>
-    
-    <lastmod>2018-09-20T16:40:46.573Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/user/createWithList.html</loc>
-    
-    <lastmod>2018-09-20T16:40:46.573Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/store/inventory.html</loc>
-    
-    <lastmod>2018-09-20T16:40:46.573Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/schemas/User.html</loc>
-    
-    <lastmod>2018-09-20T16:40:46.573Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/user/createWithArray.html</loc>
-    
-    <lastmod>2018-09-20T16:40:46.573Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/user/index.html</loc>
-    
-    <lastmod>2018-09-20T16:40:46.573Z</lastmod>
+    <lastmod>2018-10-18T08:12:20.640Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/user/login.html</loc>
     
-    <lastmod>2018-09-20T16:40:46.573Z</lastmod>
+    <lastmod>2018-10-18T08:12:20.640Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/index.html</loc>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/user/logout.html</loc>
     
-    <lastmod>2018-09-20T16:40:46.558Z</lastmod>
+    <lastmod>2018-10-18T08:12:20.640Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/schemas/Category.html</loc>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/store/inventory.html</loc>
     
-    <lastmod>2018-09-20T16:40:46.558Z</lastmod>
+    <lastmod>2018-10-18T08:12:20.640Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/pet/findByStatus.html</loc>
+    
+    <lastmod>2018-10-18T08:12:20.639Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/pet/index.html</loc>
+    
+    <lastmod>2018-10-18T08:12:20.639Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/schemas/User.html</loc>
+    
+    <lastmod>2018-10-18T08:12:20.639Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/pet/findByTags.html</loc>
+    
+    <lastmod>2018-10-18T08:12:20.639Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/schemas/Tag.html</loc>
+    
+    <lastmod>2018-10-18T08:12:20.638Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/schemas/Pet.html</loc>
+    
+    <lastmod>2018-10-18T08:12:20.638Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/requestBodies/UserArray.html</loc>
     
-    <lastmod>2018-09-20T16:40:46.558Z</lastmod>
+    <lastmod>2018-10-18T08:12:20.637Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/schemas/Order.html</loc>
+    
+    <lastmod>2018-10-18T08:12:20.637Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/schemas/ApiResponse.html</loc>
+    
+    <lastmod>2018-10-18T08:12:20.637Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/schemas/Category.html</loc>
+    
+    <lastmod>2018-10-18T08:12:20.637Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/requestBodies/Pet.html</loc>
     
-    <lastmod>2018-09-20T16:40:46.558Z</lastmod>
+    <lastmod>2018-10-18T08:12:20.636Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/user/%7Busername%7D--put.html</loc>
+    
+    <lastmod>2018-10-18T08:12:20.616Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/user/%7Busername%7D--delete.html</loc>
+    
+    <lastmod>2018-10-18T08:12:20.616Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/pet/index--put.html</loc>
+    
+    <lastmod>2018-10-18T08:12:20.615Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/user/index--post.html</loc>
+    
+    <lastmod>2018-10-18T08:12:20.615Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/user/createWithList--post.html</loc>
+    
+    <lastmod>2018-10-18T08:12:20.615Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/pet/index--post.html</loc>
+    
+    <lastmod>2018-10-18T08:12:20.614Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/securitySchemes.html</loc>
     
-    <lastmod>2018-09-20T16:40:46.558Z</lastmod>
+    <lastmod>2018-10-18T08:12:20.607Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/index.html</loc>
+    
+    <lastmod>2018-10-18T08:12:20.593Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://takumiao.github.io/hexo-swagger-site/2018/09/20/hello-hexo-swagger/</loc>
     
-    <lastmod>2018-09-20T12:46:09.754Z</lastmod>
+    <lastmod>2018-10-18T08:09:22.215Z</lastmod>
     
   </url>
   

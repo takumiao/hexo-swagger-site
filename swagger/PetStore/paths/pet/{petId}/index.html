@@ -7,17 +7,17 @@
   
   <title>Hexo Swagger</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="[Get] pet/{petId}   - Find pet by ID Returns a single pet  Parameters petId       ( integer {$int64} )   - ID of pet to return  Response 200  - successful operation application/xml       ( object&amp;lt;P">
+  <meta name="description" content="[Get] /pet/{petId}   - Find pet by ID Returns a single pet  Parameters petId       (            integer     {$int64}            )      - ID of pet to return  Response 200  - successful operation appli">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo Swagger">
 <meta property="og:url" content="https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/pet/{petId}/index.html">
 <meta property="og:site_name" content="Hexo Swagger">
-<meta property="og:description" content="[Get] pet/{petId}   - Find pet by ID Returns a single pet  Parameters petId       ( integer {$int64} )   - ID of pet to return  Response 200  - successful operation application/xml       ( object&amp;lt;P">
+<meta property="og:description" content="[Get] /pet/{petId}   - Find pet by ID Returns a single pet  Parameters petId       (            integer     {$int64}            )      - ID of pet to return  Response 200  - successful operation appli">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-20T16:40:46.573Z">
+<meta property="og:updated_time" content="2018-10-18T08:12:20.654Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Swagger">
-<meta name="twitter:description" content="[Get] pet/{petId}   - Find pet by ID Returns a single pet  Parameters petId       ( integer {$int64} )   - ID of pet to return  Response 200  - successful operation application/xml       ( object&amp;lt;P">
+<meta name="twitter:description" content="[Get] /pet/{petId}   - Find pet by ID Returns a single pet  Parameters petId       (            integer     {$int64}            )      - ID of pet to return  Response 200  - successful operation appli">
   
     <link rel="alternate" href="/hexo-swagger-site/atom.xml" title="Hexo Swagger" type="application/atom+xml">
   
@@ -25,6 +25,7 @@
     <link rel="icon" href="/favicon.png">
   
   <link rel="stylesheet" href="/hexo-swagger-site/css/style.css">
+  <link rel="stylesheet" href="/hexo-swagger-site/css/hexo-swagger-default.css">
 </head>
 
 <body>
@@ -61,7 +62,7 @@
         <section id="main"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/hexo-swagger-site/swagger/PetStore/paths/pet/{petId}/index.html" class="article-date">
-  <time datetime="2018-09-20T16:40:46.573Z" itemprop="datePublished">2018-09-21</time>
+  <time datetime="2018-10-18T08:12:20.654Z" itemprop="datePublished">2018-10-18</time>
 </a>
     
   </div>
@@ -70,101 +71,87 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1>[Get] pet/{petId}  <small style="font-weight:normal;"> - Find pet by ID</small></h1>
+        <h1>[Get] /pet/{petId}  <small style="font-weight:normal;"> - Find pet by ID</small></h1>
 <p>Returns a single pet</p>
 <br>
 <h2>Parameters</h2>
-<h3><code>petId</code>       <em>( integer {$int64} )</em>  <small style="font-weight:normal;"> - ID of pet to return</small></h3>
+<h3><code class="schema-name">petId</code>       <span class="schema-type"><em>(            integer     {$int64}            )</em>    </span> <small class="schema-desc"> - ID of pet to return</small></h3>
 <br>
 <h2>Response</h2>
 <h3>200 <small style="font-weight:normal;"> - successful operation</small></h3>
-<h4><code>application/xml</code>       <em>( object<a href="/swagger/PetStore/components/schemas/Pet.html">&lt;Pet&gt;</a> )</em></h4>
+<h4><code class="schema-name">application/xml</code>       <span class="schema-type"><em>(            <a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Pet.html">Pet</a>                )</em>    </span></h4>
 <ul>
-<li><code>id</code>       <em>( integer {$int64} )</em></li>
-<li><code>category</code>       <em>( object<a href="/swagger/PetStore/components/schemas/Category.html">&lt;Category&gt;</a> )</em>
+<li><code class="schema-name">id</code>       <span class="schema-type"><em>(            integer     {$int64}            )</em>    </span></li>
+<li><code class="schema-name">category</code>       <span class="schema-type"><em>(            <a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Category.html">Category</a>                )</em>    </span>
 <ul>
-<li><code>id</code>       <em>( integer {$int64} )</em></li>
-<li><code>name</code>       <em>( string )</em></li>
+<li><code class="schema-name">id</code>       <span class="schema-type"><em>(            integer     {$int64}            )</em>    </span></li>
+<li><code class="schema-name">name</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
 </ul>
 </li>
-<li><code>name</code>       <em>( string )</em></li>
-<li><code>photoUrls</code>       <em>( array )</em>
+<li><code class="schema-name">name</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+<li><code class="schema-name">photoUrls</code>       <span class="schema-type"><em>(            array                )</em>    </span>
 <ul>
-<li><code>items</code>       <em>( string )</em></li>
+<li><code class="schema-name">items</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
 </ul>
 </li>
-<li><code>tags</code>       <em>( array )</em>
+<li><code class="schema-name">tags</code>       <span class="schema-type"><em>(            array                )</em>    </span>
 <ul>
-<li><code>items</code>       <em>( object<a href="/swagger/PetStore/components/schemas/Tag.html">&lt;Tag&gt;</a> )</em>
+<li><code class="schema-name">items</code>       <span class="schema-type"><em>(            <a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Tag.html">Tag</a>                )</em>    </span>
 <ul>
-<li><code>id</code>       <em>( integer {$int64} )</em></li>
-<li><code>name</code>       <em>( string )</em></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><code>status</code>       <em>( string )</em>  <small style="font-weight:normal;"> - pet status in the store</small></li>
-</ul>
-<h4><code>application/json</code>       <em>( object<a href="/swagger/PetStore/components/schemas/Pet.html">&lt;Pet&gt;</a> )</em></h4>
-<ul>
-<li><code>id</code>       <em>( integer {$int64} )</em></li>
-<li><code>category</code>       <em>( object<a href="/swagger/PetStore/components/schemas/Category.html">&lt;Category&gt;</a> )</em>
-<ul>
-<li><code>id</code>       <em>( integer {$int64} )</em></li>
-<li><code>name</code>       <em>( string )</em></li>
-</ul>
-</li>
-<li><code>name</code>       <em>( string )</em></li>
-<li><code>photoUrls</code>       <em>( array )</em>
-<ul>
-<li><code>items</code>       <em>( string )</em></li>
-</ul>
-</li>
-<li><code>tags</code>       <em>( array )</em>
-<ul>
-<li><code>items</code>       <em>( object<a href="/swagger/PetStore/components/schemas/Tag.html">&lt;Tag&gt;</a> )</em>
-<ul>
-<li><code>id</code>       <em>( integer {$int64} )</em></li>
-<li><code>name</code>       <em>( string )</em></li>
+<li><code class="schema-name">id</code>       <span class="schema-type"><em>(            integer     {$int64}            )</em>    </span></li>
+<li><code class="schema-name">name</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><code>status</code>       <em>( string )</em>  <small style="font-weight:normal;"> - pet status in the store</small></li>
+<li><code class="schema-name">status</code>       <span class="schema-type"><em>(     enum  : string                     )</em>    </span> <small class="schema-desc"> - pet status in the store</small>
+<ul>
+<li>available</li>
+<li>pending</li>
+<li>sold</li>
+</ul>
+</li>
+</ul>
+<h4><code class="schema-name">application/json</code>       <span class="schema-type"><em>(            <a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Pet.html">Pet</a>                )</em>    </span></h4>
+<ul>
+<li><code class="schema-name">id</code>       <span class="schema-type"><em>(            integer     {$int64}            )</em>    </span></li>
+<li><code class="schema-name">category</code>       <span class="schema-type"><em>(            <a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Category.html">Category</a>                )</em>    </span>
+<ul>
+<li><code class="schema-name">id</code>       <span class="schema-type"><em>(            integer     {$int64}            )</em>    </span></li>
+<li><code class="schema-name">name</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+</ul>
+</li>
+<li><code class="schema-name">name</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+<li><code class="schema-name">photoUrls</code>       <span class="schema-type"><em>(            array                )</em>    </span>
+<ul>
+<li><code class="schema-name">items</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+</ul>
+</li>
+<li><code class="schema-name">tags</code>       <span class="schema-type"><em>(            array                )</em>    </span>
+<ul>
+<li><code class="schema-name">items</code>       <span class="schema-type"><em>(            <a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Tag.html">Tag</a>                )</em>    </span>
+<ul>
+<li><code class="schema-name">id</code>       <span class="schema-type"><em>(            integer     {$int64}            )</em>    </span></li>
+<li><code class="schema-name">name</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code class="schema-name">status</code>       <span class="schema-type"><em>(     enum  : string                     )</em>    </span> <small class="schema-desc"> - pet status in the store</small>
+<ul>
+<li>available</li>
+<li>pending</li>
+<li>sold</li>
+</ul>
+</li>
 </ul>
 <h3>400 <small style="font-weight:normal;"> - Invalid ID supplied</small></h3>
 <h3>404 <small style="font-weight:normal;"> - Pet not found</small></h3>
-<hr>
-<h1>[Post] pet/{petId}  <small style="font-weight:normal;"> - Updates a pet in the store with form data</small></h1>
-<br>
-<h2>Parameters</h2>
-<h3><code>petId</code>       <em>( integer {$int64} )</em>  <small style="font-weight:normal;"> - ID of pet that needs to be updated</small></h3>
-<br>
-<h2>RequestBody</h2>
-<h4><code>application/x-www-form-urlencoded</code>       <em>( object )</em></h4>
-<ul>
-<li><code>name</code>       <em>( string )</em>  <small style="font-weight:normal;"> - Updated name of the pet</small></li>
-<li><code>status</code>       <em>( string )</em>  <small style="font-weight:normal;"> - Updated status of the pet</small></li>
-</ul>
-<br>
-<h2>Response</h2>
-<h3>405 <small style="font-weight:normal;"> - Invalid input</small></h3>
-<hr>
-<h1>[Delete] pet/{petId}  <small style="font-weight:normal;"> - Deletes a pet</small></h1>
-<br>
-<h2>Parameters</h2>
-<h3><code>api_key</code>       <em>( string )</em></h3>
-<h3><code>petId</code>       <em>( integer {$int64} )</em>  <small style="font-weight:normal;"> - Pet id to delete</small></h3>
-<br>
-<h2>Response</h2>
-<h3>400 <small style="font-weight:normal;"> - Invalid ID supplied</small></h3>
-<h3>404 <small style="font-weight:normal;"> - Pet not found</small></h3>
-<hr>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/pet/{petId}/index.html" data-id="cjmasyuwd000ng4uh82cz8c1r" class="article-share-link">Share</a>
+      <a data-url="https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/pet/{petId}/index.html" data-id="cjneadptt000wx4uhixar3m9m" class="article-share-link">Share</a>
       
       
     </footer>
@@ -182,16 +169,16 @@
 	<div class="widget-wrap">
 	  <h3 class="widget-title">Paths</h3>
 	  <div class="widget">
-	    <ul><li><a href="/hexo-swagger-site/swagger/PetStore/paths/pet/findByStatus.html">/pet/findByStatus</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/pet/findByTags.html">/pet/findByTags</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/user/createWithList.html">/user/createWithList</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/pet/index.html">/pet</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/store/inventory.html">/store/inventory</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/user/createWithArray.html">/user/createWithArray</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/user/index.html">/user</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/user/login.html">/user/login</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/user/logout.html">/user/logout</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/store/order/index.html">/store/order</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/user/{username}.html">/user/{username}</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/store/order/{orderId}.html">/store/order/{orderId}</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/pet/{petId}/index.html">/pet/{petId}</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/pet/{petId}/uploadImage.html">/pet/{petId}/uploadImage</a></li></ul>
+	    <ul><li><h3>pet</h3><ul><li><a href="/hexo-swagger-site/swagger/PetStore/paths/pet/index.html"><span class="http-method">[GET]</span> /pet</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/pet/index--post.html"><span class="http-method">[POST]</span> /pet</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/pet/index--put.html"><span class="http-method">[PUT]</span> /pet</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/pet/findByStatus.html"><span class="http-method">[GET]</span> /pet/findByStatus</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/pet/findByTags.html"><span class="http-method">[GET]</span> /pet/findByTags</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/pet/{petId}/index.html"><span class="http-method">[GET]</span> /pet/{petId}</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/pet/{petId}/index--delete.html"><span class="http-method">[DELETE]</span> /pet/{petId}</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/pet/{petId}/index--post.html"><span class="http-method">[POST]</span> /pet/{petId}</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/pet/{petId}/uploadImage.html"><span class="http-method">[GET]</span> /pet/{petId}/uploadImage</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/pet/{petId}/uploadImage--post.html"><span class="http-method">[POST]</span> /pet/{petId}/uploadImage</a></li></ul></li><li><h3>store</h3><ul><li><a href="/hexo-swagger-site/swagger/PetStore/paths/store/inventory.html"><span class="http-method">[GET]</span> /store/inventory</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/store/order/index.html"><span class="http-method">[GET]</span> /store/order</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/store/order/index--post.html"><span class="http-method">[POST]</span> /store/order</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/store/order/{orderId}.html"><span class="http-method">[GET]</span> /store/order/{orderId}</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/store/order/{orderId}--delete.html"><span class="http-method">[DELETE]</span> /store/order/{orderId}</a></li></ul></li><li><h3>user</h3><ul><li><a href="/hexo-swagger-site/swagger/PetStore/paths/user/index.html"><span class="http-method">[GET]</span> /user</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/user/index--post.html"><span class="http-method">[POST]</span> /user</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/user/createWithArray.html"><span class="http-method">[GET]</span> /user/createWithArray</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/user/createWithList.html"><span class="http-method">[GET]</span> /user/createWithList</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/user/createWithList--post.html"><span class="http-method">[POST]</span> /user/createWithList</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/user/login.html"><span class="http-method">[GET]</span> /user/login</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/user/logout.html"><span class="http-method">[GET]</span> /user/logout</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/user/{username}.html"><span class="http-method">[GET]</span> /user/{username}</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/user/{username}--put.html"><span class="http-method">[PUT]</span> /user/{username}</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/paths/user/{username}--delete.html"><span class="http-method">[DELETE]</span> /user/{username}</a></li></ul></li></ul>
 	  </div>
 	</div>
 
   
     
 	<div class="widget-wrap">
-	  <h3 class="widget-title">Paths</h3>
+	  <h3 class="widget-title">Schemas</h3>
 	  <div class="widget">
-	    <ul><li><a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Category.html">Category</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Order.html">Order</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Pet.html">Pet</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Tag.html">Tag</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/components/schemas/ApiResponse.html">ApiResponse</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/components/schemas/User.html">User</a></li></ul>
+	    <ul><li><a href="/hexo-swagger-site/swagger/PetStore/components/schemas/ApiResponse.html">ApiResponse</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Category.html">Category</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Order.html">Order</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Pet.html">Pet</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Tag.html">Tag</a></li><li><a href="/hexo-swagger-site/swagger/PetStore/components/schemas/User.html">User</a></li></ul>
 	  </div>
 	</div>
 

@@ -7,17 +7,17 @@
   
   <title>Hexo Swagger</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Category       (            object                )      id       (            integer     {$int64}            )     name       (            string                )">
+  <meta name="description" content="[Post] /pet/{petId}/uploadImage   - uploads an image  Parameters petId       (            integer     {$int64}            )      - ID of pet to update  RequestBody multipart/form-data       (">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo Swagger">
-<meta property="og:url" content="https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/schemas/Category.html">
+<meta property="og:url" content="https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/pet/{petId}/uploadImage--post.html">
 <meta property="og:site_name" content="Hexo Swagger">
-<meta property="og:description" content="Category       (            object                )      id       (            integer     {$int64}            )     name       (            string                )">
+<meta property="og:description" content="[Post] /pet/{petId}/uploadImage   - uploads an image  Parameters petId       (            integer     {$int64}            )      - ID of pet to update  RequestBody multipart/form-data       (">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-18T08:12:20.637Z">
+<meta property="og:updated_time" content="2018-10-18T08:12:20.646Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Swagger">
-<meta name="twitter:description" content="Category       (            object                )      id       (            integer     {$int64}            )     name       (            string                )">
+<meta name="twitter:description" content="[Post] /pet/{petId}/uploadImage   - uploads an image  Parameters petId       (            integer     {$int64}            )      - ID of pet to update  RequestBody multipart/form-data       (">
   
     <link rel="alternate" href="/hexo-swagger-site/atom.xml" title="Hexo Swagger" type="application/atom+xml">
   
@@ -61,8 +61,8 @@
       <div class="outer">
         <section id="main"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/hexo-swagger-site/swagger/PetStore/components/schemas/Category.html" class="article-date">
-  <time datetime="2018-10-18T08:12:20.637Z" itemprop="datePublished">2018-10-18</time>
+    <a href="/hexo-swagger-site/swagger/PetStore/paths/pet/{petId}/uploadImage--post.html" class="article-date">
+  <time datetime="2018-10-18T08:12:20.646Z" itemprop="datePublished">2018-10-18</time>
 </a>
     
   </div>
@@ -71,16 +71,31 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1><code class="schema-name">Category</code>       <span class="schema-type"><em>(            object                )</em>    </span></h1>
+        <h1>[Post] /pet/{petId}/uploadImage  <small style="font-weight:normal;"> - uploads an image</small></h1>
+<br>
+<h2>Parameters</h2>
+<h3><code class="schema-name">petId</code>       <span class="schema-type"><em>(            integer     {$int64}            )</em>    </span> <small class="schema-desc"> - ID of pet to update</small></h3>
+<br>
+<h2>RequestBody</h2>
+<h4><code class="schema-name">multipart/form-data</code>       <span class="schema-type"><em>(            object                )</em>    </span></h4>
 <ul>
-<li><code class="schema-name">id</code>       <span class="schema-type"><em>(            integer     {$int64}            )</em>    </span></li>
-<li><code class="schema-name">name</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+<li><code class="schema-name">additionalMetadata</code>       <span class="schema-type"><em>(            string                )</em>    </span> <small class="schema-desc"> - Additional data to pass to server</small></li>
+<li><code class="schema-name">file</code>       <span class="schema-type"><em>(            string     {$binary}            )</em>    </span> <small class="schema-desc"> - file to upload</small></li>
+</ul>
+<br>
+<h2>Response</h2>
+<h3>200 <small style="font-weight:normal;"> - successful operation</small></h3>
+<h4><code class="schema-name">application/json</code>       <span class="schema-type"><em>(            <a href="/hexo-swagger-site/swagger/PetStore/components/schemas/ApiResponse.html">ApiResponse</a>                )</em>    </span></h4>
+<ul>
+<li><code class="schema-name">code</code>       <span class="schema-type"><em>(            integer     {$int32}            )</em>    </span></li>
+<li><code class="schema-name">type</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
+<li><code class="schema-name">message</code>       <span class="schema-type"><em>(            string                )</em>    </span></li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/components/schemas/Category.html" data-id="cjneadpsf0007x4uhl0hx0paz" class="article-share-link">Share</a>
+      <a data-url="https://takumiao.github.io/hexo-swagger-site/swagger/PetStore/paths/pet/{petId}/uploadImage--post.html" data-id="cjneb4v1i0002jsuhefwvfa6q" class="article-share-link">Share</a>
       
       
     </footer>
