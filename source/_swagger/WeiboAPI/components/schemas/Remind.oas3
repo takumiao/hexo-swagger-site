@@ -1,0 +1,12 @@
+type: object
+description: 消息未读数
+properties:
+  status:
+    type: integer
+    description: 新微博未读数
+  follower:
+    type: integer
+    description: 新粉丝数
+  cmt:
+    type: integer
+    description: 新评论数

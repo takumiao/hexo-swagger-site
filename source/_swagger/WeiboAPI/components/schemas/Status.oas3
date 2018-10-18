@@ -51,7 +51,7 @@ properties:
     $ref: '#/components/schemas/User'
     description: 微博作者的用户信息字段
   retweeted_status:
-    #$ref: '#/components/schemas/Status'
+    $ref: '#/components/schemas/Status'
     description: 被转发的原微博信息字段，当该微博为转发微博时返回
   reposts_count:
     type: integer

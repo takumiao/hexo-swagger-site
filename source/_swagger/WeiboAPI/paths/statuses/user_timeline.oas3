@@ -1,9 +1,19 @@
-get:
+get: 
   tags:
     - 微博
   summary: 
-  description: 获取前登录用户及其所关注（授权）用户的最新微博
+  description: 获取某个用户最新发表的微博列表
   requestBody:
+    description: >-
+      - 获取自己的微博，参数 `uid` 与 `screen_name` 可以不填，则自动获取当前登录用户的微博；
+
+      - 指定获取他人的微博，参数 `uid` 与 `screen_name` 二者必选其一，且只能选其一；
+
+      - 接口升级后：`uid` 与 `screen_name` 只能为当前授权用户；
+
+      - 读取当前授权用户所有关注人最新微博列表，请使用：获取当前授权用户及其所关注用户的最新微博接口 [statuses/home_timeline](./home_timeline.html)；
+      
+      - 此接口最多只返回最新的5条数据，官方移动SDK调用可返回10条；
     content:
       application/json:
         schema:
@@ -12,20 +22,24 @@ get:
             access_token:
               type: string
               description: 采用OAuth授权方式为必填参数，OAuth授权后获得。
+            uid:
+              type: integer
+              format: int64
+              description: 需要查询的用户ID。
+            screen_name:
+              type: string
+              description: 需要查询的用户昵称。
             since_id:
               type: integer
               format: int64
-              description: 若指定此参数，则返回ID比since_id大的微博（即比since_id时间晚的微博）。
-              default: 0
+              description: 若指定此参数，则返回ID比since_id大的微博（即比since_id时间晚的微博），默认为0。
             max_id:
               type: integer
               format: int64
-              description: 若指定此参数，则返回ID小于或等于max_id的微博。
-              default: 0
+              description: 若指定此参数，则返回ID小于或等于max_id的微博，默认为0。
             count:
               type: integer
-              description: 单页返回的记录条数，最大不超过100。
-              default: 20
+              description: 单页返回的记录条数，最大不超过100，超过100以100处理，默认为20。
             page:
               type: integer
               description: 返回结果的页码。
@@ -54,8 +68,6 @@ get:
                 0: 返回完整user字段
                 1: user字段仅返回user_id
               default: 0
-    description: 只返回授权用户的微博，非授权用户的微博将不返回；例如一次调用total_number是50，但其中授权用户发的只有10条，则实际只返回10条微博；使用官方移动SDK调用，可多返回30%的非授权用户的微博
-    required: true
   responses:
     '200':
       description: successful operation 

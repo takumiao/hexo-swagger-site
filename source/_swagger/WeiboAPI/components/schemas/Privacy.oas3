@@ -1,0 +1,47 @@
+type: object
+description: 隐私设置
+properties:
+  comment:
+    type: integer	
+    description: 是否可以评论我的微博，
+    enum:
+      0: 所有人
+      1: 关注的人
+      2: 可信用户
+  geo:
+    type: integer
+    description: 是否开启地理信息
+    enum:
+      0: 不开启
+      1: 开启
+  message:
+    type: integer
+    desciprtion: 是否可以给我发私信
+    enum:
+      0: 所有人
+      1: 我关注的人
+      2: 可信用户
+  realname:
+    type: integer
+    description: 是否可以通过真名搜索到我
+    enum:
+      0: 不可以
+      1: 可以
+  badge:
+    type: integer
+    description: 勋章是否可见
+    enum:
+      0: 不可见
+      1: 可见
+  mobile:
+    type: integer
+    description: 是否可以通过手机号码搜索到我
+    enum:
+      0: 不可以
+      1: 可以
+  webim:
+    type: integer
+    description: 是否开启webim
+    enum:
+      0: 不开启
+      1: 开启

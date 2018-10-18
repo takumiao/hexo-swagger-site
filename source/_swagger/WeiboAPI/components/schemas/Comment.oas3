@@ -21,7 +21,9 @@ properties:
   idstr:
     type: string
     description: 字符串型的评论ID
-  # status:
-  # reply_comment:
-  #   type: object
-  #   description: 评论来源评论，当本评论属于对另一评论的回复时返回此字段
+  status:
+    $ref: '#/components/schemas/Status'
+    description: 评论的微博信息字段
+  reply_comment:
+    $ref: '#/components/schemas/Comment'
+    description: 评论来源评论，当本评论属于对另一评论的回复时返回此字段
