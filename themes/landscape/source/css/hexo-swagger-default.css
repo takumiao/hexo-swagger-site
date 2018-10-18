@@ -1,0 +1,13 @@
+.schema-name {
+  font-weight: bold;
+}
+
+.schema-type {
+  font-weight: bold;
+  color: #08C;
+}
+
+.schema-desc {
+  font-weight:normal;
+  color: #999;
+}
