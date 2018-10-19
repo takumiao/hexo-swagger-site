@@ -1,0 +1,45 @@
+get:
+  tags:
+    - 搜索
+  summary: 
+  description: 搜索某一话题下的微博
+  requestBody:
+    description: >-
+      - 关键词只能为两#间的话题，即只能搜索某话题下的微博
+      
+      - 只返回最新200条结果
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            access_token:
+              type: string
+              description: 采用OAuth授权方式为必填参数，OAuth授权后获得。
+            q:
+              type: string
+              description: 搜索的话题关键字，必须进行URLencode，utf-8编码。
+            count:
+              type: integer
+              description: 单页返回的记录条数，最大为50。
+              default: 10
+            page:
+              type: integer
+              description: 返回结果的页码。
+              default: 1
+    required: true
+  responses:
+    '200':
+      description: successful operation 
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              statuses:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Status'
+          example: 
+            statuses:
+              - $ref: '#/components/examples/status.json'

@@ -1,0 +1,34 @@
+get:
+  tags:
+    - 微博
+  summary: 
+  description: 分享分享一条链接到微博
+  requestBody:
+    description: 请求必须采用POST方式提交，有上传图片时需要采用multipart/form-data编码方式，没有上传图片则采用正常编码方式；
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            access_token:
+              type: string
+              description: 采用OAuth授权方式为必填参数，OAuth授权后获得。
+            status:
+              type: string
+              description: 用户分享到微博的文本内容，必须做URLencode，内容不超过140个汉字，文本中不能包含“#话题词#”，同时文本中必须包含至少一个第三方分享到微博的网页URL，且该URL只能是该第三方（调用方）绑定域下的URL链接，绑定域在“我的应用 － 应用信息 － 基本应用信息编辑 － 安全域名”里设置。
+            pic:
+              type: binary
+              description: 用户想要分享到微博的图片，仅支持JPEG、GIF、PNG图片，上传图片大小限制为<5M。上传图片时，POST方式提交请求，需要采用multipart/form-data编码方式。
+            rip:
+              type: string
+              description: 开发者上报的操作用户真实IP，形如：211.156.0.1。
+    required: true
+  responses:
+    '200':
+      description: successful operation 
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Status'
+          example: 
+            $ref: '#/components/examples/status.json'

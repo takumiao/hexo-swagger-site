@@ -1,0 +1,54 @@
+get:
+  tags:
+    - 关系
+  summary: 
+  description: 获取用户关注的用户UID列表
+  requestBody:
+    description: >-
+      - 参数uid与screen_name二者必选其一，且只能选其一；
+      
+      - <font style="color:red">接口升级后：uid与screen_name只能为当前授权用户；</font>
+
+      - 只返回同样授权本应用的用户，非授权用户将不返回；
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            access_token:
+              type: string
+              description: 采用OAuth授权方式为必填参数，OAuth授权后获得。
+            uid:
+              type: integer
+              format: int64
+              description: 需要查询的用户UID。
+            screen_name:
+              type: string
+              description: 需要查询的用户昵称。
+            count:
+              type: integer
+              description: 单页返回的记录条数，最大不超过5。
+              default: 5
+            cursor:
+              type: integer
+              description: 返回结果的游标，下一页用返回值里的next_cursor，上一页用previous_cursor。
+              default: 0
+    required: true
+  responses:
+    '200':
+      description: successful operation 
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              ids:
+                type: array
+                items:
+                  type: integer
+                  format: int64
+          example:
+            ids:
+              - 1726475555
+              - 1404376560
+              - 1233616152

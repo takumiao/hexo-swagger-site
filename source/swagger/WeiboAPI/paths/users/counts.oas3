@@ -1,0 +1,51 @@
+get:
+  tags:
+    - 用户
+  summary: 
+  description: 批量获取用户的粉丝数、关注数、微博数
+  requestBody:
+    description: >-
+      <span style="color:red;">接口升级后，对未授权本应用的uid，将无法获取其粉丝数、关注数及微博数。</span>
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            access_token:
+              type: string
+              description: 采用OAuth授权方式为必填参数，OAuth授权后获得。
+            uids:
+              type: string
+              description: 需要获取数据的用户UID，多个之间用逗号分隔，最多不超过100个。
+    required: true
+  responses:
+    '200':
+      description: successful operation 
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                id:
+                  type: integer
+                  format: int64
+                  description: 微博ID
+                followers_count:
+                  type: integer
+                  description: 粉丝数
+                friends_count:
+                  type: integer
+                  description: 关注数
+                statuses_count:
+                  type: integer
+                  description: 微博数
+                private_friends_count:
+                  type: int	
+                  description: 暂未支持
+          example:
+            - id: 1404376560
+              followers_count: 1369
+              friends_count: 526
+              statuses_count: 2908

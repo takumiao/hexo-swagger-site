@@ -1,0 +1,29 @@
+get:
+  tags:
+    - 微博
+  summary: 
+  description: 根据微博ID获取单条微博内容
+  requestBody:
+    description: 查询的微博必须是授权用户发出的，非授权用户发出的将不返回数据；
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            access_token:
+              type: string
+              description: 采用OAuth授权方式为必填参数，OAuth授权后获得。
+            id:
+              type: integer
+              format: int64
+              description: 需要查询的微博ID。
+    required: true
+  responses:
+    '200':
+      description: successful operation 
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Status'
+          example: 
+            $ref: '#/components/examples/status.json'

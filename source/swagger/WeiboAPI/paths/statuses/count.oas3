@@ -1,0 +1,45 @@
+get:
+  tags:
+    - 微博
+  summary: 
+  description: 批量获取指定微博的转发数评论数
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            access_token:
+              type: string
+              description: 采用OAuth授权方式为必填参数，OAuth授权后获得。
+            ids:
+              type: string
+              description: 需要获取数据的微博ID，多个之间用逗号分隔，最多不超过100个。
+    required: true
+  responses:
+    '200':
+      description: successful operation 
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                id:
+                  type: integer
+                  format: int64
+                  description: 微博ID
+                comments:
+                  type: integer
+                  description: 评论数
+                reposts:
+                  type: integer
+                  description: 转发数
+                attitudes:
+                  type: interger
+                  description: 暂未支持
+          example: 
+            - id: 32817222
+              comments: 16
+              reposts: 38

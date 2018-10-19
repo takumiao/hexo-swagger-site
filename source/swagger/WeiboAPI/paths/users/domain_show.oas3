@@ -1,0 +1,28 @@
+get:
+  tags:
+    - 用户
+  summary: 
+  description: 通过个性化域名获取用户资料以及用户最新的一条微博
+  requestBody:
+    description: 接口升级后，对未授权本应用的uid，将无法获取其个人简介、认证原因、粉丝数、关注数、微博数及最近一条微博内容。
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            access_token:
+              type: string
+              description: 采用OAuth授权方式为必填参数，OAuth授权后获得。
+            domain:
+              type: string
+              description: 需要查询的个性化域名。
+    required: true
+  responses:
+    '200':
+      description: successful operation 
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/User'
+          example: 
+            $ref: '#/components/examples/user.json'

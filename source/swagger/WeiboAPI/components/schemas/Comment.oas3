@@ -1,0 +1,29 @@
+type: object
+description: 评论
+properties:
+  created_at:
+    type: string
+    description: 评论创建时间
+  id: 
+    type: integer
+    description: 评论的ID
+  text:
+    type: string
+    description: 评论的内容
+  source:
+    type: string
+    description: 评论的来源
+  user:
+    $ref: '#/components/schemas/User'
+  mid:
+    type: string
+    description: 评论的MID
+  idstr:
+    type: string
+    description: 字符串型的评论ID
+  status:
+    $ref: '#/components/schemas/Status'
+    description: 评论的微博信息字段
+  reply_comment:
+    $ref: '#/components/schemas/Comment'
+    description: 评论来源评论，当本评论属于对另一评论的回复时返回此字段
