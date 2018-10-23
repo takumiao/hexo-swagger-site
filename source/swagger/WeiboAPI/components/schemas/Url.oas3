@@ -1,0 +1,11 @@
+type: object
+description: 链接
+properties:
+  url_short:
+    type: string
+    description: 短链接
+  url_long:
+    type: string
+    description: 原始长连接
+example:
+  $ref: '#/components/examples/url-short.json'

@@ -1,0 +1,18 @@
+type: object
+description: 通用参数
+properties:
+  access_token:
+    type: string
+    description: 采用OAuth授权方式为必填参数，OAuth授权后获得。
+  uid:
+    type: integer
+    format: int64
+    description: 用户UID。
+  id:
+    type: integer
+    format: int64
+    description: 微博ID。
+  page:
+    type: integer
+    description: 返回结果的页码。
+    default: 1

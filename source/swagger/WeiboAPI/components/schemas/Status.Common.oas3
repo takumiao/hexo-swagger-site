@@ -1,0 +1,59 @@
+type: object
+properties:
+  since_id:
+    type: integer
+    format: int64
+    description: 若指定此参数，则返回`ID`比`since_id大`的微博（即比`since_id`时间晚的微博）。
+    default: 0
+  max_id:
+    type: integer
+    format: int64
+    description: 若指定此参数，则返回`ID`小于或等于`max_id`的微博。
+    default: 0
+  base_app:
+    type: integer
+    description: 否只获取当前应用的数据。
+    enum:
+      0: 否（所有数据）
+      1: 是（仅当前应用）
+    default: 0
+  feature:
+    type: integer
+    description: 过滤类型ID。
+    enum:
+      0: 全部
+      1: 原创
+      2: 图片
+      3: 视频
+      4: 音乐
+    default: 0
+  trim_user:
+    type: integer
+    description: 返回值中user字段开关。
+    enum:
+      0: 返回完整user字段
+      1: user字段仅返回user_id
+    default: 0
+  filter_by_author:
+    type: integer
+    description: 作者筛选类型
+    enum: 
+      0: 全部
+      1: 我关注的人
+      2: 陌生人
+    default: 0
+  filter_by_source:
+    type: integer
+    description: 来源筛选类型
+    enum:
+      0: 全部
+      1: 来自微博
+      2: 来自微群
+    default: 0
+  filter_by_type:
+    type: integer
+    description: 原创筛选类型
+    enum:
+      0: 全部微博
+      1: 原创的微博
+    default: 0

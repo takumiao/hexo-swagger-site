@@ -1,0 +1,19 @@
+description: >-
+  Global error
+  <p>关于错误返回值与错误代码，参见[错误代码说明](/hexo-swagger-site/swagger/WeiboAPI/Error_code.html)</p>
+content:
+  application/json:
+    schema:
+      type: object
+      properties:
+        request:
+          type: string
+          format: uri
+          description: 请求地址
+        error_code:
+          type: string
+          description: 错误代码
+        error:
+          type: string
+          description: 错误信息
+          

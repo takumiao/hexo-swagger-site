@@ -13,7 +13,7 @@ get:
             access_token:
               type: string
               description: 采用OAuth授权方式为必填参数，OAuth授权后获得。
-            url_short:
+            url_long:
               type: string
               description: 需要转换的长链接，需要URLencoded，最多不超过20个。
     required: true

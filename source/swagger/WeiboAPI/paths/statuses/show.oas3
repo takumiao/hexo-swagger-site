@@ -11,12 +11,9 @@ get:
           type: object
           properties:
             access_token:
-              type: string
-              description: 采用OAuth授权方式为必填参数，OAuth授权后获得。
+              $ref: '#/components/schemas/Common/properties/access_token'  
             id:
-              type: integer
-              format: int64
-              description: 需要查询的微博ID。
+              $ref: '#/components/schemas/Common/properties/id'  
     required: true
   responses:
     '200':

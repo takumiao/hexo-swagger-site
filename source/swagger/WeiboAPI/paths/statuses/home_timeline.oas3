@@ -10,50 +10,23 @@ get:
           type: object
           properties:
             access_token:
-              type: string
-              description: 采用OAuth授权方式为必填参数，OAuth授权后获得。
+              $ref: '#/components/schemas/Common/properties/access_token'
             since_id:
-              type: integer
-              format: int64
-              description: 若指定此参数，则返回ID比since_id大的微博（即比since_id时间晚的微博）。
-              default: 0
+              $ref: '#/components/schemas/Status.Common/properties/since_id'
             max_id:
-              type: integer
-              format: int64
-              description: 若指定此参数，则返回ID小于或等于max_id的微博。
-              default: 0
+              $ref: '#/components/schemas/Status.Common/properties/max_id'
             count:
               type: integer
               description: 单页返回的记录条数，最大不超过100。
               default: 20
             page:
-              type: integer
-              description: 返回结果的页码。
-              default: 1
+              $ref: '#/components/schemas/Common/properties/page'
             base_app:
-              type: integer
-              description: 否只获取当前应用的数据。
-              enum:
-                0: 否（所有数据）
-                1: 是（仅当前应用）
-              default: 0
+              $ref: '#/components/schemas/Status.Common/properties/base_app'
             feature:
-              type: integer
-              description: 过滤类型ID。
-              enum:
-                0: 全部
-                1: 原创
-                2: 图片
-                3: 视频
-                4: 音乐
-              default: 0
+              $ref: '#/components/schemas/Status.Common/properties/feature'
             trim_user:
-              type: integer
-              description: 返回值中user字段开关。
-              enum:
-                0: 返回完整user字段
-                1: user字段仅返回user_id
-              default: 0
+              $ref: '#/components/schemas/Status.Common/properties/trim_user'
     description: >-
       只返回授权用户的微博，非授权用户的微博将不返回；
 
@@ -76,3 +49,5 @@ get:
           example: 
             statuses:
               - $ref: '#/components/examples/status.json'
+    default:
+      $ref: '#/components/responses/Error'
